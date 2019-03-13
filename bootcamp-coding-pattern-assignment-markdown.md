@@ -6,23 +6,11 @@
 ### Introduction
 - Describe what you are trying to implement with the coding task
 
-### Link to Assignment
-- Assignment document link
-
-### Previous Jira
-- https://jira.devfactory.com/browse/{Previous_Jira}
-
 ### Current Jira
 - https://jira.devfactory.com/browse/{Current_Jira}
 
-### Previous Subsequent Pull-Request
-- {Previous Pull-request}
-
 ### Current PR
 - {Current Pull-request}
-
-### Add Screenshot (for UI based work)
-- Add screenshot and screenshot videos
 
 ### Pattern Found History
 - What steps taken to find the pattern
@@ -32,13 +20,13 @@
 - Write why your pattern is adding new value along with all the existing patterns. It is non-related to coverage gain. Only the business value terms.
 
 ### Find Such Block Percentage
-- Your assumption on Finding Such Blocks in any given repo. (low to high put an average estimation it should not be based on samplemocking codebase.)
+- Your assumption on Finding Such Blocks in any given repo. (low to high put an average estimation it should not be based on samplemocking codebase.). AES CIS for the only pattern, 2. count number files / number of cs files 
 
 ### Confluence Page Link
 - Page link
 
 ### Demonstrated CodeBase (zip)
-- ...(zip and codebase here with package so that running time is slower but we understand the filesize issue)
+- ...(zip and codebase here with package so that running time is slower but we understand the filesize issue). 
 
 ### AESCIS Running Video
 - Video shows that AESCIS runs properly with new pattern. Show from generate UI, record full video.
@@ -53,20 +41,15 @@
 - [ ] Demonstration video added from google drive.
    - [ ] All test cases are shown in the demonstration video.
    - [ ] Video is conscise.
-   - [ ] TestCase shown without implementation and with implementation.
    - [ ] Video length is not more than 10 mins.
-- [ ] Updated task's excel sheet with ETA for investigation, development and status changed to Code Review.
-- [ ] Already tracked your pull-requests and Jira in a different sheet inside the task workbook (excel).
 - [ ] CRN review all green. (Exception to CRN review don't apply - if says const -> static readonly, remove set from interface)
 - [ ] Pattern Quality Checking Bars
    - [ ] Is outputted pattern buildable. (Initializer Pattern + NewlyCreated Pattern) Output should be buildable.
    - [ ] Pattern is run against AESCIS project in file mode and generation is okay for new pattern + initializer pattern. Recording added.
   - [ ] Confluence page created for the pattern linked at : ...
-  - [ ] Pattern Contains Mocking of Framework (Moq or MsFakes)
-  - [ ] Created pattern doesn't contian bug in the static analyzer in the CI.
+  - [ ] (optional) Pattern Contains Mocking of Framework (Moq or MsFakes)
   - [ ] Used CsharpSyntaxNode over SyntaxNode (must).
-  - [ ] Ask for pattern running Json file and commit the pattern running json file.
-- [ ] Watched Code review guide for the team from prerequisite section. Apply Code review guide on the pull-request.
+   - [ ] Watched Code review guide for the team from prerequisite section. Apply Code review guide on the pull-request. http://bit.ly/2EQO0wO
    - [ ] Ommited (Your) Author Name from Pattern.
    - [ ] Code doesn't contain magic strings, all are placed in the StaticTypes (CsharpIdentifiers, CommonConstants, AnyIdentifiers)
    - [ ] Linq is used properly.
@@ -89,14 +72,10 @@
      - [ ] DRY principal applied.
      - [ ] All methods are taking Interface than actual object and also returning interface types.
      - [ ] If modified existing method then refactoring applied as per the rule.
-   - [ ] Paths are used based on console arguments.
-   - [ ] Optimized framework in terms of redundancy.
-   - [ ] Created pattern doesn't contian bug in the static analyzer in the CI.
-   - [ ] Datatemplate doesn't contain any mix of tabs and spaces, no imbalanced spaces.
+   - [ ] Optimized framework in terms of redundancy. Don't process data in the code what where already processed, just take already processed data.
    - [ ] Errors are captured with LogHelper or ConsoleLogger.
    - [ ] Any I/O is handled with `Try-Catch` ,plus, `LogHelper` used properly. Moreover, use MutexHelper for file I/O.
-- [ ] Jira closed when PR is merged.
-- [ ] Assign to reivewer when check-list is all checked except for merge.
+- [ ] *DO NOT* Assign to reivewer when check-list is all checked except for merge and *DO NOT* ask to review Alim
 
 ### Reviewers's Check List (must)
 - [ ] Appripriate markdown and title is being used (Title doesn't contain `#DocumentLink` but actual link and actual title than Assignment Title)
